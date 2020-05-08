@@ -18,13 +18,9 @@ body > header {
 }
 
 .v-navbar {
-    position: absolute;
     background: transparent;
-    color: #fff;
-    z-index: 5000;
-    right: 0;
-    padding: 15px;
     box-shadow: none;
+    color: #fff;
 }
 
 .v-navbar h3 {
