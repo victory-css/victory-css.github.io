@@ -14,18 +14,43 @@ body > header {
     height: calc(100% - 190px);
     position: relative;
     z-index: 100;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
     animation: colorchange 50s infinite;
 }
 
-body > header > nav {
+.v-navbar {
     position: absolute;
-    z-index: 105;
+    background: transparent;
+    color: #fff;
+    z-index: 5000;
     right: 0;
     padding: 15px;
+    box-shadow: none;
 }
 
-body > header > nav > a {
+.v-navbar h3 {
+    font-size: 13pt;
+    text-transform: uppercase;
+    background: rgba(0,0,0,.1);
+    padding: 20px 17px;
+}
+
+.v-nav-item {
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.v-nav-item img {
+    margin-right: 15px;
+}
+
+.v-nav-items-inner {
+    min-width: 220px !important;
+    max-width: 320px !important;
+    width: calc(100% - 220px) !important;
+}
+
+.v-navbar > a {
     position: relative;
     text-decoration: none;
     color: #fff;
@@ -38,16 +63,16 @@ body > header > nav > a {
     display:inline-block;
 }
 
-body > header > nav > a:hover {
+.v-navbar > a:hover {
     background: rgba(0,0,0,.4);
 }
 
-body > header > nav > a[target] {
+.v-navbar > a[target] {
     width: 45px;
     padding: 0;
 }
 
-body > header > nav > a > img {
+.v-navbar > a > img {
     position: absolute;
     z-index: 110;
     left: 50%;
@@ -113,7 +138,6 @@ h1 > span {
     display: block;
     margin: 5px auto;
     padding: 15px;
-    background: rgba(0,0,0,.5);
     max-width: 640px;
     width: 98%;
 }
