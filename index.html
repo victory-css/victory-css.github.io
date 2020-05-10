@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Victory.css</title>
+<title>Victory.css - increble lightweight open source CSS toolkit</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 <link rel="stylesheet" type="text/css" href="https://victory-css.github.io/victory.css/dist/victory.min.css">
@@ -12,7 +12,7 @@
 <body>
 <header>
     <nav class="v-navbar v-nav-min">
-        <div class="v-nav-right">
+        <div class="v-nav-left">
             <button class="v-nav-toggle">
                 <span class="v-sr-only">Toggle navigation</span>
                 <i class="v-icon-bar"></i>
@@ -22,15 +22,6 @@
 
             <div class="v-nav-items v-nav-ltr">
                 <div class="v-nav-items-inner">
-                    <a class="v-nav-item" target="_blank" href="https://stackoverflow.com/questions/ask?tags=css,javascript,victory.css">
-                        <img src="images/stackoverflow.svg" alt="Create a question in Stack Overflow" width="28" height="28">
-                        Ask in Stack Overflow
-                    </a>
-                    <a class="v-nav-item" target="_blank" href="https://github.com/victory-css/victory.css">
-                        <img src="images/github.svg" alt="fork in Github" width="28" height="28">
-                        Github
-                    </a>
-
                     <h3>Examples</h3>
                     <a class="v-nav-item" href="https://victory-css.github.io/victory.css/examples/arrows.html">arrows</a>
                     <a class="v-nav-item" href="https://victory-css.github.io/victory.css/examples/badges.html">badges</a>
@@ -101,6 +92,14 @@
                 </div>
             </div>
         </div>
+        <div class="v-nav-right">
+            <a class="v-nav-item" target="_blank" href="https://stackoverflow.com/questions/ask?tags=css,javascript,victory.css">
+                <img src="images/stackoverflow.svg" alt="Create a question in Stack Overflow" width="28" height="28">
+            </a>
+            <a class="v-nav-item" target="_blank" href="https://github.com/victory-css/victory.css">
+                <img src="images/github.svg" alt="Github" width="28" height="28">
+            </a>
+        </div>
     </nav>
     <h1>
         Victory.css
@@ -124,56 +123,16 @@
         </div>
     </div>
 
-    <section id="examples">
-        <h2>Examples</h2>
+    <!--
+    <section id="templates">
+        <h2>Templates</h2>
 
         <div class="v-row">
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/grids/responsive-grid.html">
-                    <img src="images/examples/responsive-grid.png">
+            <figure class="v-col-lg-4 v-col-md-6">
+                <a class="v-card v-bg-dark" href="victory.css/examples/grids/responsive-grid.html">
+                    <span class="v-badge v-badge-tr v-bg-success">Free</span>
+                    <img src="images/templates/xxxxx.png">
                     <figcaption>Responsive grid</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/fields.html">
-                    <img src="images/examples/fields.png">
-                    <figcaption>Fields</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/navbar/navbar-primary-color.html">
-                    <img src="images/examples/navbar.png">
-                    <figcaption>Navbar</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/visibility/display-block-by-viewport-sizes.html">
-                    <img src="images/examples/display-block-by-viewport.png">
-                    <figcaption>{display: block} by viewport sizes</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/tables/table-responsive-sm.html">
-                    <img src="images/examples/table-responsive.png">
-                    <figcaption>responsive table</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/colored-cards-(for-messages-and-notifications).html">
-                    <img src="images/examples/colored-cards.png">
-                    <figcaption>Colored cards</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/buttons/button-colors.html">
-                    <img src="images/examples/buttons.png">
-                    <figcaption>Button colors</figcaption>
-                </a>
-            </figure>
-            <figure class="v-col-lg-3 v-col-md-4 v-col-sm-6">
-                <a class="v-card" href="victory.css/examples/horizontal-line/horizontal-line.html">
-                    <img src="images/examples/horizontal-line.png">
-                    <figcaption>horizontal line</figcaption>
                 </a>
             </figure>
         </div>
@@ -181,6 +140,162 @@
         <p>
             <a class="v-btn v-out-dark v-btn-lg" href="examples.html">more</a>
         </p>
+    </section>
+    -->
+
+    <section class="v-container">
+        <h2>Grid system</h2>
+
+        <p>The grid system is very simple based on a maximum of 12 columns, and can only be added within an element with <code>.v-row</code>, the system is similar to other frameworks/toolkits (or whatever name you want to give to that)</p>
+
+        <div class="v-overflow-auto">
+            <table class="v-table v-table-hover v-table-striped">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Media-query</th>
+                        <th>Classname</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>All</th>
+                        <td>None</td>
+                        <td><code>.v-col-*</code></td>
+                    </tr>
+                    <tr>
+                        <td>≥ 576px</th>
+                        <td><code>@media (min-width: 576px)</code></td>
+                        <td><code>.v-col-sm-*</code></td>
+                    </tr>
+                    <tr>
+                        <td>≥ 768px</th>
+                        <td><code>@media (min-width: 768px)</code></td>
+                        <td><code>.v-col-md-*</code></td>
+                    </tr>
+                    <tr>
+                        <td>≥ 992px</th>
+                        <td><code>@media (min-width: 992px)</code></td>
+                        <td><code>.v-col-lg-*</code></td>
+                    </tr>
+                    <tr>
+                        <td>≥ 1200px</th>
+                        <td><code>@media (min-width: 1200px)</code></td>
+                        <td><code>.v-col-xl-*</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>An element with class <code>.v-col-*-1</code> is equivalent makes the element equivalent to one column, an element with <code>.v-col-*-2</code> is equivalent to three columns, for each <code>.v-row</code> the total must be 12, however a single <code>.v-row</code> can also contain 24 columns (depending on the sum) because the system itself will break in the desired amount</p>
+
+        <h3>Grid example</h3>
+
+        <div class="v-overflow-auto">
+            <div id="col-system" class="v-row">
+                <div class="v-col-sm-6 v-col-md-1 v-col-lg-2 v-col-xl-6">
+                    <div class="v-card v-bg-primary">
+                        <code>sm-6</code><br>
+                        <code>md-1</code><br>
+                        <code>lg-2</code><br>
+                        <code>xl-2</code>
+                    </div>
+                </div>
+                <div class="v-col-sm-6 v-col-md-4 v-col-lg-2 v-col-xl-2">
+                    <div class="v-card v-bg-secondary">
+                        <code>sm-6</code><br>
+                        <code>md-4</code><br>
+                        <code>lg-2</code><br>
+                        <code>xl-2</code>
+                    </div>
+                </div>
+                <div class="v-col-sm-6 v-col-md-1 v-col-lg-2 v-col-xl-1">
+                    <div class="v-card v-bg-dark">
+                        <code>sm-6</code><br>
+                        <code>md-1</code><br>
+                        <code>lg-2</code><br>
+                        <code>xl-2</code>
+                    </div>
+                </div>
+                <div class="v-col-sm-6 v-col-md-2 v-col-lg-2 v-col-xl-1">
+                    <div class="v-card v-bg-light">
+                        <code>sm-6</code><br>
+                        <code>md-2</code><br>
+                        <code>lg-2</code><br>
+                        <code>xl-2</code>
+                    </div>
+                </div>
+                <div class="v-col-sm-6 v-col-md-3 v-col-lg-3 v-col-xl-1">
+                    <div class="v-card v-bg-warning">
+                        <code>sm-6</code><br>
+                        <code>md-3</code><br>
+                        <code>lg-3</code><br>
+                        <code>xl-2</code>
+                    </div>
+                </div>
+                <div class="v-col-sm-6 v-col-md-1 v-col-lg-1 v-col-xl-1">
+                    <div class="v-card v-bg-danger">
+                        <code>sm-6</code><br>
+                        <code>md-1</code><br>
+                        <code>lg-1</code><br>
+                        <code>xl-2</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="v-divider-gradient">
+
+        <h3>Prevent wrong grid usage</h3>
+
+        <p>The grid system of Victory.css was adjusted to prevent the developer from failing, something that is quite common in other frameworks / toolkits, in case of using the structure wrong the CSS itself will apply a pseudo-element informing that something is wrong in the structure, as in the following</p>
+
+        <h3>Wrong element child in <code>v-row</code></h3>
+
+        <div class="v-overflow-auto">
+            <div id="wrong-child" class="v-row">
+                <div class="doo">
+                    <div class="v-card v-bg-primary">Foo</div>
+                </div>
+                <div class="v-col-6">
+                    <div class="v-card v-bg-secondary">Bar</div>
+                </div>
+                <div class="v-col-6">
+                    <div class="v-card v-bg-success">Baz</div>
+                </div>
+            </div>
+        </div>
+
+        <code class="v-code-pre">&lt;div class="v-row">
+    &lt;div class="doo">Foo&lt;/div>
+    &lt;div class="v-col-6">Bar&lt;/div>
+    &lt;div class="v-col-6">Baz&lt;/div>
+&lt;/div></code>
+
+        <hr class="v-divider-gradient">
+
+        <h3>Wrong element parent from <code>v-col-*</code></h3>
+
+        <div class="v-overflow-auto">
+            <div id="wrong-parent" class="anything">
+                <div class="v-col-6">
+                    <div class="v-card v-bg-primary">Foo</div>
+                </div>
+                <div class="v-col-4">
+                    <div class="v-card v-bg-secondary">Bar</div>
+                </div>
+                <div class="v-col-2">
+                    <div class="v-card v-bg-success">Baz</div>
+                </div>
+            </div>
+        </div>
+
+        <code class="v-code-pre">&lt;div id="wrong-parent" class="anything">
+    &lt;div class="v-col-6">Foo&lt;/div>
+    &lt;div class="v-col-4">Bar&lt;/div>
+    &lt;div class="v-col-2">Baz&lt;/div>
+&lt;/div></code>
+
     </section>
 </main>
 <footer>
