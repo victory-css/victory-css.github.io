@@ -259,10 +259,10 @@ section .v-overflow-auto > table {
     text-align: center;
 }
 
-#col-system .v-card {
-    height: 400px;
-    padding: 1em;
-    line-height: 2em;
+section .v-overflow-auto .v-card {
+    height: 130px;
+    padding: .8em;
+    line-height: 2;
 }
 
 section h3 {
@@ -272,9 +272,4 @@ section h3 {
 section hr {
     max-width: 500px;
     margin: 45px auto !important;
-}
-
-#wrong-child .v-card, #wrong-parent .v-card {
-    height: 100px;
-    padding: 2em;
 }
