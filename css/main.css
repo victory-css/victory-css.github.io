@@ -8,6 +8,11 @@ body {
     min-width: 320px;
 }
 
+p {
+    font-size: 12pt;
+    line-height: 1.2;
+}
+
 body > header {
     overflow: hidden;
     background: #d13a41;
@@ -219,7 +224,7 @@ main > section {
     padding: 100px 0 50px 0;
 }
 
-main > section > h2 {
+main > section h2 {
     font-weight: 400;
     font-size: 36pt;
     margin-bottom: 50px;
@@ -272,4 +277,15 @@ section h3 {
 section hr {
     max-width: 500px;
     margin: 45px auto !important;
+}
+
+#versions {
+    background: #fcfcfc;
+    text-align: center;
+}
+
+#versions .v-code-pre {
+    text-align: left;
+    display: block;
+    padding: 3em;
 }
