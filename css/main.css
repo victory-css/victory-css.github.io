@@ -16,6 +16,7 @@ p {
 body > header {
     overflow: hidden;
     background: #d13a41;
+    height: 90%;
     height: calc(100% - 190px);
     position: relative;
     z-index: 100;
@@ -288,4 +289,18 @@ section hr {
     text-align: left;
     display: block;
     padding: 3em;
+}
+
+#support {
+    padding: 0;
+}
+
+#support table {
+    text-align: center;
+    width: 100%;
+}
+#support th, #support td {
+    border: thin solid #f4f3f3;
+    border-bottom: 0;
+    border-top: 0;
 }
