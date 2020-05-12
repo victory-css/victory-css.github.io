@@ -14,7 +14,6 @@ p {
 }
 
 body > header {
-    overflow: hidden;
     background: #d13a41;
     height: 90%;
     height: calc(100% - 190px);
@@ -27,6 +26,10 @@ body > header {
     background: transparent;
     box-shadow: none;
     color: #fff;
+}
+
+.v-navbar .v-icon-bar {
+    background: #fff;
 }
 
 .v-navbar h3 {
@@ -96,20 +99,6 @@ h1 {
     line-height: .9em;
     font-weight: 100;
     color: #fff;
-}
-
-h1:after {
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    font-weight: bold;
-    text-transform: uppercase;
-    content: "Victory.css";
-    font-size: 300%;
-    color: #000;
-    opacity: .1;
 }
 
 h1 > span {
