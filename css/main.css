@@ -24,8 +24,11 @@ body > header {
 
 .v-navbar {
     background: transparent;
-    box-shadow: none;
     color: #fff;
+}
+
+.v-navbar:not(.v-bg-danger) {
+    box-shadow: none;
 }
 
 .v-navbar .v-icon-bar {

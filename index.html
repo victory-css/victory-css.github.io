@@ -4,10 +4,10 @@
 <title>Victory.css - increble lightweight open source CSS toolkit</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/victory.css@0.5.0/dist/victory.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/victory.css@0.5.1/dist/victory.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css?r=2">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet" type="text/css">
-<script src="https://cdn.jsdelivr.net/npm/victory.css@0.5.0/dist/victory.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/victory.css@0.5.1/dist/victory.min.js"></script>
 </head>
 <body>
 <header>
@@ -360,28 +360,27 @@
     </section>
 </main>
 <footer>
-     Victory.css is a increble lightweight open source toolkit with only 7,51 KB (minified and gzipped)
+     Victory.css is a increble lightweight open source toolkit with only 7,5 KB (minified and gzipped)
 </footer>
 <script type="text/javascript">
 (function (d, w) {
     var scrolledTimeout;
 
-    Victory.addEvent(w, 'scroll', triggerScrolled);
     Victory.addEvent(w, 'load', triggerScrolled);
+    Victory.addEvent(w, 'scroll', triggerScrolled);
     Victory.addEvent(w, 'resize', triggerScrolled);
 
     function triggerScrolled(e)
     {
         if (scrolledTimeout) clearTimeout(scrolledTimeout);
 
-        scrolledTimeout = setTimeout(toggleScrolled, 10);
+        scrolledTimeout = setTimeout(toggleScrolled, 5);
     }
 
     function toggleScrolled()
     {
-        var navbar = d.querySelector('.v-navbar'), scrollTop = d.body.scrollTop || d.documentElement.scrollTop;
-
-        console.log(scrollTop, window.innerHeight, scrollTop >= window.innerHeight)
+        var navbar = d.querySelector('.v-navbar'),
+            scrollTop = d.body.scrollTop || d.documentElement.scrollTop;
 
         if (scrollTop >= window.innerHeight) {
             Victory.classList.add(navbar, 'v-bg-danger');
