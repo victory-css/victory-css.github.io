@@ -5,7 +5,6 @@ html, body {
 
 body {
     font-family: Roboto,'Helvetica Neue',Helvetica,Arial,freesans,sans-serif;
-    min-width: 320px;
 }
 
 p {
@@ -92,6 +91,7 @@ h1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    font-weight: bold;
     font-size: 42pt;
     line-height: .9em;
     font-weight: 100;
@@ -102,6 +102,10 @@ h1 > span {
     display: block;
     font-size: 28%;
     text-align: right;
+}
+
+h1 {
+    font-size: 32pt;
 }
 
 #request {
