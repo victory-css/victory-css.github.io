@@ -93,20 +93,22 @@ h1 {
     top: 50%;
     transform: translate(-50%,-50%);
     font-weight: bold;
-    font-size: 42pt;
+    font-size: 32pt;
     line-height: .9em;
     font-weight: 100;
     color: #fff;
+}
+
+@media (min-width: 320px) {
+    h1 {
+        font-size: 42pt;
+    }
 }
 
 h1 > span {
     display: block;
     font-size: 28%;
     text-align: right;
-}
-
-h1 {
-    font-size: 32pt;
 }
 
 #request {
@@ -123,17 +125,18 @@ h1 {
     padding-right: 35px;
     padding-left: 35px;
 }
-/*
+
 #request code {
-    text-align: left;
-    border-radius: 3px;
-    display: block;
-    margin: 5px auto;
-    padding: 15px;
-    max-width: 640px;
-    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 460px;
 }
-*/
+
+#request .v-bg-dark {
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
 #templates {
     background: #eff3f6;
     background: linear-gradient(0deg, #dbdee6 0%, #eff3f6 100%);
@@ -252,6 +255,7 @@ section code {
 }
 
 section .v-overflow-auto > table {
+    min-width: 380px;
     width: 100%;
     text-align: center;
 }
@@ -289,8 +293,17 @@ section hr {
 
 #support table {
     text-align: center;
+    max-width: 1920px;
     width: 100%;
+    margin: 0 auto;
 }
+
+#support th {
+    max-width: 80px;
+    font-size: 8pt;
+    font-weight: 300;
+}
+
 #support th, #support td {
     border: thin solid #f4f3f3;
     border-bottom: 0;
