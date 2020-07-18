@@ -309,3 +309,14 @@ section hr {
     border-bottom: 0;
     border-top: 0;
 }
+
+#support td img {
+    user-select: none;
+    position: relative;
+    top: 0;
+    transition: all .4s ease;
+}
+
+#support td:hover img, #support td:active img {
+    top: -20px;
+}

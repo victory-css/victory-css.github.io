@@ -328,7 +328,7 @@ npm install</code>
 
         <div class="v-overflow-auto">
             <div id="wrong-child" class="v-row">
-                <div class="doo">
+                <div class="doo"> <!-- invalid element -->
                     <div class="v-card v-bg-primary">Foo</div>
                 </div>
                 <div class="v-col-6">
@@ -341,7 +341,7 @@ npm install</code>
         </div>
 
         <code class="v-code-pre">&lt;div class="v-row">
-    &lt;div class="doo">Foo&lt;/div>
+    &lt;div class="doo">Foo&lt;/div> &lt;!-- invalid element -->
     &lt;div class="v-col-6">Bar&lt;/div>
     &lt;div class="v-col-6">Baz&lt;/div>
 &lt;/div></code>
@@ -351,7 +351,7 @@ npm install</code>
         <h3>Wrong element parent from <code>v-col-*</code></h3>
 
         <div class="v-overflow-auto">
-            <div id="wrong-parent" class="anything">
+            <div id="wrong-parent" class="anything"> <!-- invalid element -->
                 <div class="v-col-6">
                     <div class="v-card v-bg-primary">Foo</div>
                 </div>
@@ -364,7 +364,7 @@ npm install</code>
             </div>
         </div>
 
-        <code class="v-code-pre">&lt;div id="wrong-parent" class="anything">
+        <code class="v-code-pre">&lt;div id="wrong-parent" class="anything"> &lt;!-- invalid element -->
     &lt;div class="v-col-6">Foo&lt;/div>
     &lt;div class="v-col-4">Bar&lt;/div>
     &lt;div class="v-col-2">Baz&lt;/div>
